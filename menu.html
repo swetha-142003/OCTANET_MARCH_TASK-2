@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MENU CARD WEBSITE</title>
+    <script src="C:\Users\sweth\OneDrive\Documents\Desktop\task1\menu.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color:lavender;
+        }
+
+        h1 {
+            text-align: center;
+            color:blueviolet;
+            font-style: italic;
+
+        }
+        h3{
+            color:green;
+            font-size: medium;
+            font-style: italic;
+            text-align:center;
+        }
+        #taskInput {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+
+        }
+
+        #addTaskBtn {
+            padding: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color:pink;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #taskList {
+            width: 70%;
+        }
+
+        #taskList li span {
+            margin-right: 10px;
+        }
+
+        #taskList li button {
+            background-color: #dc3545;
+            color:black;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>SELECT THE FOOD ITEMS</h1>
+    <h3>USING TO-DO LIST</h3><br>
+    <center><input type="text" id="taskInput" placeholder="SELECT YOUR FOOD ITEMS">
+    <button id="addTaskBtn" onclick="addTask()">ADD ITEMS</button>
+    <ul id="taskList"></ul>
+</center>
+</body>
+</html>
